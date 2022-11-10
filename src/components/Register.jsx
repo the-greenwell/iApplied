@@ -5,7 +5,7 @@ import { useSignup } from '../hooks/useSignup.hook'
 export const Register = ({visible, setVisible}) => {
     useEffect(() => {
         setVisible(false)
-    }, [])
+    }, [visible])
     const { signup, isLoading, error, setError } = useSignup();
     const [state,setState] = useState({
         formData: {

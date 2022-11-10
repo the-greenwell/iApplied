@@ -43,7 +43,7 @@ export const JobForm = () => {
         }
         if(!company.error && !position.error && !link.error && !notes.error){
             setError(null)
-            axios.post('http://localhost:8000/api/jobs/', body, {
+            axios.post('https://iapplied-api.herokuapp.com/api/jobs/', body, {
                 headers: {
                     auth_token: `Bearer ${user.token}`
                 }

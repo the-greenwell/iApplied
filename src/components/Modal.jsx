@@ -64,7 +64,7 @@ export const NoteModal = ({show,onHide,job}) => {
                         </div>)
                         : 
                         state.link.value 
-                        ?(<a href={state.link.value}>
+                        ?(<a href={state.link.value} target='_blank'>
                             <Link45deg/><span style={{textDecoration: 'none'}}>- Link to job posting</span>
                         </a>)
                         :(<small className='text-muted mb-0'>

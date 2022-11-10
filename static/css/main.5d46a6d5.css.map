@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.5d46a6d5.css","mappings":"AAAA,yBACI,eACI,mBACJ,CACA,iBACI,iBACJ,CACJ","sources":["app.css"],"sourcesContent":["@media (max-width: 480px) { \n    #job-container {\n        padding: 0 !important;\n    }\n    #dashboard-title {\n        padding-left: .5em;\n    }\n}"],"names":[],"sourceRoot":""}

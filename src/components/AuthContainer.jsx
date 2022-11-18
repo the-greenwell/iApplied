@@ -3,7 +3,6 @@ import { LogIn } from './Login';
 import { Register } from './Register';
 
 export const AuthContainer = () => {
-    const [visible, setVisible] = useState(false)
     const [loginForm, setFormType] = useState(true)
 
     return (
@@ -15,7 +14,7 @@ export const AuthContainer = () => {
                 </div>
                 <div className="form-text m-0">Signing Up</div>
             </div>
-            {loginForm ? (<LogIn visible={visible} setVisible={setVisible} />) : (<Register visible={visible} setVisible={setVisible} />)}
+            {loginForm ? (<LogIn />) : (<Register />)}
         </div>
     )
 }

@@ -2,10 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLogin } from '../hooks/useLogin.hook'; 
 import { ValidatorError } from './ValidatorError';
 
-export const LogIn = ({visible, setVisible}) => {
-    useEffect(() => {
-        setVisible(false)
-    }, [])
+export const LogIn = () => {
     const { login, isLoading, error, setError } = useLogin()
     const [state,setState] = useState({
         formData: {
@@ -13,6 +10,7 @@ export const LogIn = ({visible, setVisible}) => {
             password: ''
         }
     })
+    const [visible,setVisible] = useState(false)
 
     const changeHandler = (e) => {
         setError(null)

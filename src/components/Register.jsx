@@ -2,10 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ValidatorError } from './ValidatorError';
 import { useSignup } from '../hooks/useSignup.hook'
 
-export const Register = ({visible, setVisible}) => {
-    useEffect(() => {
-        setVisible(false)
-    }, [visible])
+export const Register = () => {
     const { signup, isLoading, error, setError } = useSignup();
     const [state,setState] = useState({
         formData: {
@@ -16,6 +13,7 @@ export const Register = ({visible, setVisible}) => {
             conf_password: {value:'', error: false}
         }
     })
+    const [visible,setVisible] = useState(false)
 
     const changeHandler = (e) => {
         setError(null)
